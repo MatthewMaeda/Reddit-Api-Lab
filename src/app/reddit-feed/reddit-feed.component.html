@@ -1,0 +1,10 @@
+<header>
+  <button (click)="runApi()">Cuteness Button</button>
+</header>
+<main>
+  <div *ngFor="let post of redditPosts" class="outterBox">
+    <h4 class="innerBox">{{ post.data.title }}</h4>
+    <img class="innerBox" src="{{post.data.thumbnail}}" height="auto" width="auto">
+    <a class="innerBox" href="{{post.data.url}}"><i class="fas fa-link"></i></a> 
+  </div>
+</main>
